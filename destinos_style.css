@@ -1,0 +1,134 @@
+*{
+    margin: 0px;
+    padding: 0;
+    color: white;
+    /* box-sizing -- propiedad que implica el tamaño incluyendo bordes y relleno*/
+    box-sizing: border-box;
+}
+body{
+    font-size: sans-serif;
+    background: linear-gradient(to top, transparent, rgb(43, 42, 42)), url(fondo_destinos.jpg);
+    /*background-size: cover --- ajusta el tamaño del fondo al tamaño de la ventana manteniendose fijo al uso del scroll*/
+    background-size: cover; 
+    background-attachment: fixed; 
+    height: 90vh; 
+    /*aling-items y justify-content -- encargado de centrar tanto vertical como horizontal*/
+    justify-content: center; 
+    align-items: center;
+    margin-top: 150px; 
+}
+h1{
+    position: relative;
+    text-align: center;
+    margin: 60px 0px;
+    
+}
+img{
+    width: 320px;
+    height: 340px;
+    /*Ajusta el tamaño de la imagen al contenedor*/
+    object-fit: cover;
+    border-radius: 20px 20px 0px 0px;
+    border: transparent;
+}
+img:hover{
+    /*Aplica una transformacion en el tamaño de la imagen*/
+    transform: scale(1.05);
+    /*Aplica una transicion suave*/
+    transition: 1s;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    background:  linear-gradient(to top, transparent , black 50%);
+    z-index: 1;
+}
+header h1{
+    font-weight: bold;
+    margin-right: 60%;
+    border-bottom: 2px solid whitesmoke;
+}
+header ul{
+    list-style: none;
+    display: flex;
+    text-align: center;
+}
+header ul li{
+    margin-left: 50px;
+    margin-right: 5%;
+}
+header ul li a{
+    font-weight: bold;
+    text-decoration: none;
+    padding:8px;
+    border: 2px solid whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px 0px whitesmoke;
+}
+header ul li a:hover{
+    background-color: white;
+    color: black;
+    transition: 0.8s;
+}
+header i{
+    position: relative;
+    font-size: 28px;
+    padding: 5px; 
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 100px;
+}
+.content .block{
+    margin-left: 80px;
+    margin-right: 80px;
+    padding: 15px;
+    border-radius: 8%;
+    border: 2px solid black;
+    box-shadow: 0px 0px 10px 0px white;
+}
+.content .block>div{
+    margin: 0px;
+    background-color: #2d2d2d;
+    box-shadow: 0px 0px 15px 0px whitesmoke;
+    border-radius: 20px;
+}
+.content .block>div:hover{
+    background-color:#222222;
+    transition: 0.8s;
+}  
+.content .block .info{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.content .block .info p{
+    padding: 4px;
+}
+.content .block .info p span{
+    color: #c9c8c8;
+}
+.content .block .info button{
+    margin-top: 5px;
+    background: transparent;
+    border: 1px white solid;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px white;
+    cursor: pointer;
+}
+.content .block .info button:hover{
+    background-color: white;
+    color: black;
+    transition: 0.8s;
+}

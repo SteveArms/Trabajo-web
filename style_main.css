@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inconsolata", monospace;
+}
+body{
+    background: linear-gradient(to top, transparent, rgb(43, 42, 42)), url(fondo.jpg); 
+    background-size: cover; 
+    background-attachment: fixed; 
+    height: 90vh; 
+    justify-content: center; 
+    align-items: center; 
+    display: flex; 
+}
+.content {
+    height: 600px;
+    width: 1000px;
+    background-color: rgb(0, 0, 0, 0.7);
+    padding: 45px;
+    border-radius: 5%;
+    color: white;
+}
+.content header h1{
+    border-bottom: 2px solid whitesmoke;
+    font-size: 40px;
+    float: left;
+    margin-right: 200px;
+    text-shadow: 3px 3px gray;
+}
+.content header nav{
+    float: left;
+}
+.content header{
+    overflow: hidden;
+}
+.content header nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.content header nav ul li{
+    margin: 12px 30px;
+}
+.content header nav ul li a{
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 2px;
+}
+.content header nav ul li a:hover{
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+.conten .imagenes{
+    display: flex;   
+}
+.content .imagenes img{   
+    height: 200px;
+    border-bottom: 4px solid rgb(0,0,0,0.7);
+    margin-left: 80px;
+    margin-right: 50px;
+    border-radius: 15%;
+}
+.content .contenido h3{
+    translate: 5%;
+    border-bottom: 2px solid whitesmoke;
+    padding: 5px;
+    text-shadow: 2px 2px gray;
+    margin-top: 100px;
+    width: 830px;
+    margin-bottom: 30px;
+    font-size: 60px;
+    font-weight: bold;
+}
+.content .contenido .parrafo{
+    margin-left: 20px;
+    margin-top: 30px;
+    padding: 20px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.content .contenido .redes{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 20px;
+}
+.content .contenido .redes ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+}
+.content .contenido .redes ul li{
+    margin: 12px 12px;
+}
+.content .contenido .redes ul li a{
+    font-size: 30px;
+    padding: 5px;
+    color: white;
+    border-radius: 10%;
+}
+.content .contenido .redes ul li a:hover{
+    color: black;
+    background-color: white;
+    transition: 0.8s;
+}
+.content .beneficio{
+    text-align: center;
+    border-radius: 3%;
+    padding: 20px;
+    height: 380px;
+    background-color: rgb(0,0,0,0.7);
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+.content .beneficio h2{
+    font-size: 28px;
+    font-weight: bold;
+}
+.content .beneficio .opciones ul{
+    margin-top: 20px;
+    padding: 15px;
+    list-style: none;
+}
+.content .beneficio .opciones ul li {
+    margin: 15px;
+    padding: 5px;
+}
+.content .beneficio .opciones p{
+    font-weight: bold;
+}
+.content .beneficio .opciones i{
+    font-size: 25px;
+}
+.content .contactos{
+    display: flex;
+    border-radius: 3%;
+    height: 520px;
+    width: 820px;
+    margin-top: 100px;
+    margin-left: 45px;
+    padding: 20px;
+    color: white;
+    background-color: rgb(0,0,0,0.7);
+}
+.content .contactos h1{
+    translate: 200%;
+    display: flex;
+    height: 50px;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid whitesmoke;
+}
+.content .contactos .cont{
+    translate: 6% 16%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content .contactos .cont ul{
+    list-style: none;
+    font-weight: bold;
+    margin-top: -80px;
+}
+.content .contactos .cont ul li{
+    border-left: 2px solid whitesmoke;
+    border-right: 2px solid whitesmoke;
+    padding: 20px;
+    margin-top: 25px;
+    text-align: center;
+}
+.content .contactos .cont ul li i{
+    padding: 4px;
+    font-size: 25px;
+    margin-bottom: 8px;
+    color: white;
+    border-radius: 10%;
+}
+.content .contactos .cont ul li i:hover{
+    background-color: white;
+    color: rgb(0, 0, 0);
+    transition: 0.8s;
+}
