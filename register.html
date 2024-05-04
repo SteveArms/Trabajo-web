@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Registrate || Tourist Premium </title>
+    <link rel="stylesheet" href="registro_style.css">
+</head>
+<body>
+    <video autoplay loop muted allowfullscreen>
+        <source src="video_register.mp4">
+    </video>
+    <div class="register_box">
+        <img src="logo.jpg" alt="Logo de empresa">
+        <h1> Registrate </h1>
+        <form method="post" action="cgi-bin/register.pl">
+            <div class="formul">
+                <label >Ingresa tu nombre de Usuario</label>
+                <input type="text" pattern="[a-zA-Z]+"  maxlength="99" placeholder="Nombre de Usuario" autofocus name="usuario">
+                <label >Ingresa la contrase&ntilde;a</label>
+                <input type="text" pattern="[a-zA-Z0-9]+" maxlength="99" placeholder="Contrase&ntilde;a" name="password">
+                <label >Ingresa el correo electronico</label>
+                <input type="text" placeholder="Correo Electronico" name="correo">
+                <label >Ingresa la edad</label>
+                <input type="text" pattern="\d+" placeholder="Edad" name="edad">
+                <label >Ingresa tu Nro. de Celular</label>
+                <input type="text" pattern="^[0-9]{9}$" placeholder="Numero de Celular" name="celular">
+                </div>
+            <input type="submit" value=" Registrarte ">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style_login.css">
+    <title>Login || Tourist Prime</title>
+</head>
+<body>
+        <video autoplay muted loop allowfullscreen>
+            <source src="video_login.mp4">
+        </video>
+        <div class="login_box">
+            <img src="logo.jpg" alt="Logo - Empresa Tourist Prime">
+            <h1>Login</h1>
+            <form action="cgi-bin/logear.pl" method="get">
+                <label for="usuario">Usuario</label>
+                <input type="text" placeholder="Usuario" name="usuario" autofocus>
+                <label for="contrase&ntilde;a">Contrase&ntilde;a</label>
+                <input type="text" placeholder="Contrase&ntilde;a" name="password"> 
+                <input type="submit" value=" Ingresar " name="submit"> 
+            </form>
+            <p>Si no tienes una cuenta - Registrate</p>
+            <button onclick="redirectToRegister()"> Registrarte </button>
+        </div>
+        <script>
+            function redirectToRegister() {
+                window.location.href = "register.html"; 
+            }
+        </script>
+</body>
+</html>
